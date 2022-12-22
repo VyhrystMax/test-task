@@ -6,4 +6,4 @@ Preparation:
 
 Task:
 
-You need to detect if auction HTML or JSON contain "Preview" button or value and filter such auctions before output.
+You need to detect if auction HTML or JSON contain "Preview" button or value and remove such auctions from output.
