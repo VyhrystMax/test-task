@@ -9,14 +9,14 @@ const getDate = $ => {
     $('.Card-details')
       .text()
       .split(' | '),
-  );
+  );      
 
   return moment.utc(_.last(dateStr.split('–')), 'DD MMM YYYY').format('YYYY-MM-DD');
 };
 
-const getLocation = $ =>
+const getLocation = $ =>                                              
   _.last(
-    $('.Card-details')
+    $('.Card-details')         
       .text()
       .split(' | '),
   ).trim();
@@ -61,7 +61,7 @@ const crawlAuctions = async url => {
   const $ = cheerio.load(res.body);
 
   let ress = $('.SearchModule-results-item').toArray();
-  console.log("[sothebys][crawlAuctions] SearchModule ress", ress.length);
+  // console.log("[sothebys][crawlAuctions] SearchModule ress", ress.length);
   // const chrHtml = cheerio.html || cheerio.default.html;
   ress = ress
     .map(n => cheerio.load(n))
