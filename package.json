@@ -5,10 +5,11 @@
   "main": "app.js",
   "author": "",
   "dependencies": {
-    "lodash": "^4.17.11",
-    "random-useragent": "^0.3.1",
+    "axios": "^1.4.0",
     "cheerio": "^1.0.0-rc.2",
+    "lodash": "^4.17.11",
     "moment": "^2.23.0",
+    "random-useragent": "^0.3.1",
     "request": "^2.88.0"
   }
 }
